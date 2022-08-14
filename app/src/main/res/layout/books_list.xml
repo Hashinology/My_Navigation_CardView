@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:elevation="24dp"
+    android:layout_margin="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toEndOf="@id/imgBook"
+            app:layout_constraintTop_toTopOf="@id/imgBook" />
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Description"
+            android:textSize="12sp"
+            android:layout_marginStart="65dp"
+            app:layout_constraintStart_toEndOf="@id/imgBook"
+            app:layout_constraintTop_toBottomOf="@id/tvAuthor"
+            app:layout_constraintBottom_toBottomOf="@id/imgBook"/>
+        <ImageView
+            android:id="@+id/imgBook"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/vaccincetry"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
